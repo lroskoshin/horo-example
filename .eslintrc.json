@@ -1,0 +1,14 @@
+{
+    "env": {
+        "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "rules": {
+        "eol-last": ["error", "always"],
+        "no-multiple-empty-lines": "error",
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"]
+    }
+}
