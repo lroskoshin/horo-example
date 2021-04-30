@@ -1,8 +1,8 @@
 import { horo, Component } from 'horojs';
-import { animationFrameScheduler, merge, scheduled, Subject } from 'rxjs';
+import { animationFrameScheduler, merge, Observable, scheduled, Subject } from 'rxjs';
 import { scan, map, startWith, mapTo } from 'rxjs/operators';
 
-export function Counter(): Component {
+export function Counter(): Observable<Component> {
     const clickPlus$ = new Subject<Event>();
     const clickMinus$ = new Subject<Event>();
 
