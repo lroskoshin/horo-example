@@ -1,6 +1,6 @@
 import { horo } from 'horojs';
 import { Counter } from './components/counter';
-import { ToDo } from './components/todo';
+import { ToDoComponent } from './components/todo';
 
 
 export const app = horo`
@@ -10,6 +10,6 @@ export const app = horo`
     </section>
     <section>
         <h2>ToDo</h2>
-        ${ToDo()}
+        ${ToDoComponent()}
     </section>
 `;
